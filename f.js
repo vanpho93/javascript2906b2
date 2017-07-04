@@ -18,7 +18,22 @@ function Line(pointA, pointB) {
     }
 }
 
+function Triangle(pointA, pointB, pointC) {
+    this.pointA = pointA;
+    this.pointB = pointB;
+    this.pointC = pointC;
+    this.getPerimeter = function() {
+        const l1 = new Line(this.pointA, this.pointB);
+        const l2 = new Line(this.pointC, this.pointB);
+        const l3 = new Line(this.pointA, this.pointC);
+        return l1.getLength() + l2.getLength() + l3.getLength();
+    }
+}
+
 const pA = new Point(0, 0);
 const pB = new Point(0, 1);
+const pC = new Point(1, 0);
 const lAB = new Line(pA, pB);
-console.log(lAB.getLength());
+const tABC = new Triangle(pA, pB, pC);
+// console.log(lAB.getLength());
+console.log(tABC.getPerimeter());
