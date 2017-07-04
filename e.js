@@ -2,8 +2,8 @@
 
 // name, age
 
-function Car(brach, year) {
-    this.brach = brach;
+function Car(branch, year) {
+    this.branch = branch;
     this.year = year;
 }
 
@@ -23,7 +23,7 @@ const y = new Car('Honda', 2017);
 
 const khoa = new Employee('Khoa Pham', 30, y);
 const pho = new Employee('Pho', 18);
-console.log(khoa.car.brach);
+console.log(khoa.car.branch);
 // pho.incrAge();
 // console.log(pho);
 // pho.sayHello();
