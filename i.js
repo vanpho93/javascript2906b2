@@ -28,7 +28,6 @@ const isTallEnough = arrPerson.some(e => e.height > 185);
 // console.log(checkExist(arrPerson, e => e.age > 10));
 
 function filter(anyArray, filterFunction) {
-    //return []
     const arrResult = [];
     anyArray.forEach(e => filterFunction(e) ? arrResult.push(e) : null);
     return arrResult;

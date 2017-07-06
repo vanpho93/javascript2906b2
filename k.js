@@ -18,5 +18,8 @@ const arrPerson = [
 // const tiIndex = arrPerson.findIndex(e => e.height > 200);
 // console.log(tiIndex);
 
-const e = arrPerson.find(e => e.name === 'Tun');
-console.log(e);
+// const e = arrPerson.find(e => e.name === 'Tun');
+// console.log(e);
+const arrAge = arrPerson.map(e => e.age);
+// console.log(arrAge.reduce((a, b) => a + b));
+console.log(arrPerson.sort((a, b) => -a.age + b.age));
