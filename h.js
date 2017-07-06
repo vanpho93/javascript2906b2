@@ -13,7 +13,3 @@ const arr = [1, 3, 4, 2, 4, 5];
 // doForEach(arr, function(e) {
 //     console.log(e * e);
 // });
-
-function checkExist(anyArray, checkFunction) {
-
-}
