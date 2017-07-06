@@ -3,15 +3,35 @@
     Class Line -> diemA: Point, diem: Point, getLength -> phuong thuc
 */
 
-function Point(x, y) {
-    this.x = x;
-    this.y = y;
+// function Point(x, y) {
+//     this.x = x;
+//     this.y = y;
+// }
+
+class Point {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
 }
 
-function Line(pointA, pointB) {
-    this.pointA = pointA;
-    this.pointB = pointB;
-    this.getLength = function() {
+// function Line(pointA, pointB) {
+//     this.pointA = pointA;
+//     this.pointB = pointB;
+//     this.getLength = function() {
+//         const dx = this.pointA.x - this.pointB.x;
+//         const dy = this.pointA.y - this.pointB.y;
+//         return Math.sqrt(dx * dx + dy * dy);
+//     }
+// }
+
+class Line {
+    constructor(pointA, pointB) {
+        this.pointA = pointA;
+        this.pointB = pointB;
+    }
+
+    getLength() {
         const dx = this.pointA.x - this.pointB.x;
         const dy = this.pointA.y - this.pointB.y;
         return Math.sqrt(dx * dx + dy * dy);
