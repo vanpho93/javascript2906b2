@@ -38,11 +38,26 @@ class Line {
     }
 }
 
-function Triangle(pointA, pointB, pointC) {
-    this.pointA = pointA;
-    this.pointB = pointB;
-    this.pointC = pointC;
-    this.getPerimeter = function() {
+// function Triangle(pointA, pointB, pointC) {
+//     this.pointA = pointA;
+//     this.pointB = pointB;
+//     this.pointC = pointC;
+//     this.getPerimeter = function() {
+//         const l1 = new Line(this.pointA, this.pointB);
+//         const l2 = new Line(this.pointC, this.pointB);
+//         const l3 = new Line(this.pointA, this.pointC);
+//         return l1.getLength() + l2.getLength() + l3.getLength();
+//     }
+// }
+
+class Triangle {
+    constructor(pointA, pointB, pointC) {
+        this.pointA = pointA;
+        this.pointB = pointB;
+        this.pointC = pointC;
+    }
+
+    getPerimeter() {
         const l1 = new Line(this.pointA, this.pointB);
         const l2 = new Line(this.pointC, this.pointB);
         const l3 = new Line(this.pointA, this.pointC);
